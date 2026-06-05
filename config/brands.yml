@@ -1,0 +1,31 @@
+# 監視設定ファイル
+# ブランド追加は brands リストに文字列を追記するだけ
+
+sites:
+  - name: bazzstore
+    api: rakuten
+    shop_code: bazzstore
+    brands:
+      - MOUSSY
+      # 追加例:
+      # - "Y's"
+      # - RRL
+      # - KAPITAL
+      # - chimala
+
+# 将来追加するサイト（フェーズ3以降）
+# - name: vector_park
+#   api: rakuten
+#   shop_code: auc-vector
+#   brands:
+#     - MOUSSY
+
+# 通知設定
+notification:
+  method: gmail       # gmail / line（将来対応）
+  to: shinsui889@gmail.com
+
+# データ保存設定
+storage:
+  max_days: 30        # 30日以上前のデータを削除
+  max_count: 5000     # 最大保存件数
