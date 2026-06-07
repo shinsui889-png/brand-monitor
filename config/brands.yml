@@ -6,7 +6,7 @@ sites:
     api: rakuten
     shop_code: bazzstore
     brands:
-      - MOUSSY
+                - Jacob Cohen
       # 追加例:
       # - "Y's"
       # - RRL
